@@ -1,6 +1,13 @@
 {
     "name": "andy",
-
-    "model": "gpt-4o-mini"
-
+    "model": {
+        "api": "openai",
+        "url": "http://192.168.1.151:1234/v1",
+        "model": "qwen2.5-3b-instruct"
+    },
+    "embedding": {
+        "api": "openai",
+        "url": "http://192.168.1.151:1234/v1",
+        "model": "nomic-embed-text"
+    }
 }
