@@ -11,9 +11,17 @@ export default
     "mindserver_port": process.env.MINDSERVER_PORT || 8080,
     
     // the base profile is shared by all bots for default prompts/examples/modes
-    "base_profile": "./profiles/defaults/survival.json", // also see creative.json, god_mode.json
+    "base_profile": "./profiles/defaults/creative.json", // also see creative.json, god_mode.json
     "profiles": ((process.env.PROFILES) && JSON.parse(process.env.PROFILES)) || [
-        "./andy.json",
+        // "./profiles/custom/phi4-mini.json",
+        // "./profiles/custom/granite.json",
+        // "./profiles/custom/qwq32b.json",
+        // "./profiles/custom/dolphinmistral.json",
+        // "./profiles/custom/gemini-flash-thinking.json",
+        // "./profiles/custom/gemini-pro.json",
+        "./profiles/custom/ds-r1-llama-70b.json",
+
+
         // "./profiles/gpt.json",
         // "./profiles/claude.json",
         // "./profiles/gemini.json",
@@ -39,7 +47,7 @@ export default
     "relevant_docs_count": 5, // Parameter: -1 = all, 0 = no references, 5 = five references. If exceeding the maximum, all reference documents are returned.
 
     "max_messages": 50, // max number of messages to keep in context
-    "num_examples": 3, // number of examples to give to the model
+    "num_examples": 4, // number of examples to give to the model
     "max_commands": -1, // max number of commands that can be used in consecutive responses. -1 for no limit
     "verbose_commands": true, // show full command syntax
     "narrate_behavior": true, // chat simple automatic actions ('Picking up item!')
