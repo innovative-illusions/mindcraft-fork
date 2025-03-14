@@ -11,15 +11,15 @@ export default
     "mindserver_port": process.env.MINDSERVER_PORT || 8080,
     
     // the base profile is shared by all bots for default prompts/examples/modes
-    "base_profile": "./profiles/defaults/creative.json", // also see creative.json, god_mode.json
+    "base_profile": "./profiles/defaults/god_mode.json", // also see creative.json, god_mode.json
     "profiles": ((process.env.PROFILES) && JSON.parse(process.env.PROFILES)) || [
         // "./profiles/custom/phi4-mini.json",
         // "./profiles/custom/granite.json",
         // "./profiles/custom/qwq32b.json",
-        // "./profiles/custom/dolphinmistral.json",
+        // "./profiles/custom/deepseek.json",
         // "./profiles/custom/gemini-flash-thinking.json",
-        // "./profiles/custom/gemini-pro.json",
-        "./profiles/custom/deepseek.json",
+        "./profiles/custom/nemo.json",
+        //"./profiles/custom/gemini-exp-1206.json",
 
 
         // "./profiles/gpt.json",

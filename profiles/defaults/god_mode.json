@@ -7,7 +7,7 @@
         "hunting": false,
         "item_collecting": false,
         "torch_placing": false,
-        "elbow_room": false,
+        "elbow_room": true,
         "idle_staring": true,
         "cheat": true
     }
