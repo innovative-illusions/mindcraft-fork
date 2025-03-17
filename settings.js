@@ -18,7 +18,7 @@ export default
         // "./profiles/custom/qwq32b.json",
         // "./profiles/custom/deepseek.json",
         // "./profiles/custom/gemini-flash-thinking.json",
-        "./profiles/custom/nemo.json",
+        "./profiles/custom/gemma3.json"
         //"./profiles/custom/gemini-exp-1206.json",
 
 
